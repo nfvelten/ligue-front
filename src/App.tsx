@@ -1,9 +1,7 @@
-import { Developers } from "components/developers";
+import { Developers } from 'components/developers';
 
 function App() {
-  return (
-    <Developers/>
-  );
+  return <Developers />;
 }
 
 export { App };

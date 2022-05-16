@@ -1,9 +1,11 @@
-FROM node:15.12.0
+FROM node:14.16.0-alpine3.13
 
 WORKDIR /app
 
-ADD . .
+COPY . ./
 
-RUN npm install
+RUN yarn install
 
-CMD ["npm", "run", "dev"]
+EXPOSE 3001
+
+CMD ["yarn", "dev"]
